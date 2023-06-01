@@ -1,0 +1,77 @@
+DDL对库的操作
+    1.查询
+    show databases; 查询所有数据库名称
+    2.创建
+    create database 数据库名称; 创建数据库
+    create database if not exists 数据库名称; 创建数据库（判断，不存在则创建）
+    3.删除
+    DROP DATABASE 数据库名称; 删除数据库
+    DROP DATABASE IF EXISTS 数据库名称; 删除数据库(判断，如果存在则删除)
+    4.使用数据库
+    SELECT DATABASE(); 查看当前使用的数据库
+    USE 数据库名称; 使用数据库
+    MySQL自带4个数据库
+    information_schema 记录MySQL中有哪些库和表 视图信息
+    MySQL 记录 权限 安全 用户
+    proformance_schema 记录数据库性能相关
+    sys 系统相关信息
+DDL对表的操作
+  查询表
+  SHOW TABLES; 查询当前数据库下所有表名称
+  DESC 表名称; 查询表结构
+  创建表
+  CREATE TABLE 表名 (
+  字段名1 数据类型1,
+  字段名2 数据类型2,
+  字段名n 数据类型n
+  );
+  注意:最后一行末尾，不能加逗号
+  删除表
+  DROP TABLE 表名; 删除表
+  DROP TABLE IF EXISTS 表名;删除表时判断表是否存在
+  修改表
+  ALTER TABLE 表名 RENAME TO 新的表名；修改表名
+  ALTER TABLE 表名 ADD 列名 数据类型；添加一列
+  ALTER TABLE 表名 MODIFY 列名 新数据类型；修改数据类型
+  ALTER TABLE 表名 CHANGE 列名 新列名 新数据类型；修改列名和数据类型
+  ALTER TABLE 表名 DROP 列名； 删除列
+  
+  
+分类                                                                大小（byte）
+数值类型                     TINYINT                                  1                         小整数值
+                            SMALLINT                                 2                          大整数值
+                            MEDIUMINT                                3                          大整数值
+                            INT或INTEGER                             4                         大整数值                          age int
+                            BIGINT                                   8                        极大整数值
+                            FLOAT                                    4                       单精度浮点数值
+                            DOUBLE                                   8                      双精度浮点数值                       scores double(总长度,小数点后保留几位)
+                            DECIMAL                                                         小数值
+日期和时间类型                DATE                                     3                      日期值
+                            TIME                                     3                      时间值或持续时间
+                            YEAR                                     1                      年份值
+                            DATE                                     8                      混合日期和时间值                      brithday date
+                            TIMETIMESTAMP                            4                      混合日期和时间值，时间戳                  "张三"
+字符串类型                   CHAR                                    0-255 bytes             定长字符串                               name char(10)  占十个字符空间 8个空格 存储性能高   浪费空间
+                            VARCHAR                                 0-65535 bytes           变长字符串                              name barchar(10) 占两个                 相对低     相对节省  
+                            TINYBLOB                                0-255 bytes             不超过 255 个字符的二进制字符串
+                            TINYTEXT                                0-255 bytes             短文本字符串
+                            BLOB                                    0-65 535 bytes          二进制形式的长文本数据
+                            TEXT                                    0-65 535 bytes          长文本数据
+                            MEDIUMBLOB                              0-16 777 215 bytes      二进制形式的中等长度文本数据
+                            MEDIUMTEXT                              0-16 777 215 bytes      中等长度文本数据
+                            LONGBLOB                                0-4 294 967 295 bytes   二进制形式的极大文本数据
+                            LONGTEXT                                0-4 294 967 295 bytes   极大文本数据
+
+
+
+
+
+
+
+
+
+
+
+
+
+
