@@ -1,0 +1,18 @@
+查询语法
+SELECT字段列表
+FROM表名列表
+WHERE条件列表
+GROUP BY分组字段
+HAVING分组后条件
+ORDER BY排序字段
+LIMIT分页限定
+distinct 去除重复
+基础查询
+条件查询(WHERE)
+分组查询(GROUP BY)
+排序查询(ORDER BY)
+分页查询(LIMIT)
+基础查询
+查询多个字段SELECT 字段列表 FROM 表名;
+SELECT * FROM 表名;查询所有数据
+去除重复记录SELECT DISTINCT 字段列表 FROM 表名;
