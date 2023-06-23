@@ -1,0 +1,72 @@
+Maven
+Maven是专门用于管理和构建Java项目的工具，它的主要功能有
+提供了一套标准化的项目结构
+提供了一套标准化的构建流程 (编译，测试，打包，发布......)
+提供了一套依赖管理机制
+--依赖管理
+依赖管理其实就是管理你项目所依赖的第三方资源(jar包、插件...)
+1.Maven 使用标准的坐标配置来管理各种依赖2.只需要简单的配置就可以完成依赖管理
+Maven提供了一套标准化的项目结构，所有IDE使用Maven构建的项目结构完全一样，所有IDE创建的Maven项目可以通用
+
+Maven 简介
+
+Maven 作用:标准化的项目结构
+标准化的构建流程
+方便的依赖管理
+
+Apache Maven 是一个项目管理和构建工具，它基于项目对象模型(POM)的概念，
+通过一小段描述信息来管理项目的构建、报告和文档
+
+仓库分类
+本地仓库:自己计算机上的一个目录中央仓库:由Maven团队维护的全球唯一的仓库
+地: https://repo1.maven.org/maven2
+远程仓库(私服):一般由公司团队搭建的私有仓库
+
+当项目中使用坐标引入对应依赖jar包后，首先会查找本地仓库中是否有对应的jar包如果有，则在项目直接引用;
+如果没有，则去中央仓库中下载对应的jar包到本地仓库。
+
+
+还可以搭建远程仓库，将来jar包的查找顺序则变为:
+本地仓库>远程仓库 >中央仓库
+
+
+Maven 常用命令
+compile: 编译
+clean: 清理test:测试package:打包install:安装
+Maven 安装配置Maven 基本使用
+IDEA配置Maven
+
+IDEA配置Maven
+IDEA 配置 Maven 环境
+Maven 坐标详解
+IDEA 创建 Maven 项目
+IDEA导入 Maven 项目
+
+IDEA配置Maven
+自
+步骤
+IDEA 配置 Maven 环境
+1.选择IDEA中 File --> Settings
+2.搜索maven
+3.设置IDEA使用本地安装的 Maven，并修改配置文件路径
+
+步骤
+IDEA 导入 Maven 项目
+1.选择右侧Maven面板，点击 +号
+2.选中对应项目的pom.xml文件，双击即可3.如果没有Maven面板，选择
+View >Appearance > Tod Window Bars
+
+配置Maven-Helper 插件
+选择IDEA中 File--> Settings1
+选择 Plugins2
+搜索 Maven，选择第一个 Maven Helper，点击Install安装，弹出面板中点击Accept
+重启IDEA
+依赖管理
+
+Maven 坐标详解
+什么是坐标?
+Maven 中的坐标是资源的唯一标识
+使用坐标来定义项目或引入项目中需要的依赖
+Maven坐标主要组成
+groupld:定义当前Maven项目隶属组织名称 (通常是域名反写，例如: com.itheima)artifactld: 定义当前Maven项目名称 (通常是模块名称，例如 order-service、goods-service)
+version:定义当前项目版本号
