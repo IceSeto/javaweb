@@ -1,0 +1,82 @@
+Mapper 代理开发
+步骤
+使用 Mapper 代理方式完成入门案例
+定义与SQL映射文件同名的Mapper接口，并且将Mapper接口和SQL映射文件放置在同一目录下设置SQL映射文件的namespace属性为Mapper接口全限定名
+在Mapper 接口中定义方法，方法名就是SQL映射文件中sql语句的id，并保持参数类型和返回值类型一致
+编码
+通过 SlSession的 getMapper方法获取 Mapper接口的代理对象调用对应方法完成sql的执行
+
+MyBatis 核心配置文件详解
+MyBatis核心配置文件的顶层结构如下
+。configuration (配置)
+。 properties (属性
+。 settings (设置)
+。typeAliases (类型别名)
+。 typeHandlers (类型理器
+。 objectFactory (对象工厂
+。 plugins (插件)
+。 environments (环境配置)environment (环境变量transactionManager (事务管理器 dataSource (数据源)。 databaseldProvider(数据库厂商标识)。 mappers (映射器)
+类型别名 (typeAliases
+<typeAliases >
+<package name="com.itheima.pojo"/></typeAliases>
+细节:配置各个标签时，需要遵守前后顺序
+
+MyBatisX 插件
+MybatisX是一款基于IDEA的快速开发插件，为效率而生
+主要功能:
+XML和接口方法相互跳转
+根据接口方法生成statement
+
+MyBatis完成操作需要几步 ?三步: 编写接口方法--> 编写SQL --> 执行方法
+
+1.参数占位符
+1)#: 执行SQL时，会将##占位符替换为?,将来自动设置参数值2) s:拼SQL。会存在sQL注入问题
+3.使用时机:
+参数传递，都使用##
+*如果要对表名、列名进行动态设置，只能使用S0进行sql拼接
+2.parameterType:
+*用于设置参数类型，该参数可以省略
+3.SQL语句中特殊字符处理
+*转义字符
+<![CDATA[ 内容]]>:CD
+
+SQL语句会随着用户的输入或外部条件的变化而变化，我们称为 动态SQL
+MyBatis 对动态SQL有很强大的支撑:
+choose (when, otherwise)
+trim (where, set)
+foreach
+
+
+
+
+动态SQL
+if:用于判断参数是否有值，使用test属性进行条件判断*存在的问题:第一个条件不需要逻辑运算符
+解决方案
+1)使用恒等式让所有条件格式都一样2)<where>标签替换 where 关键字
+
+从多个条件中选择+
+choose (when,otherwise): 选择，类似于Java 中的 switch 语句
+
+执行方法，测试
+MyBatis事务:
+openSession0:默认开启事务，进行增删改操作后需要使用 sqlSession.commit0; 手动提交事务openSession(true): 可以设置为自动提交事务(关闭事务)
+
+返回添加数据的主键
+<insert useGeneratedKeys="true" keyProperty="id">
+
+
+注解完成增删改查
+使用注解开发会比配置文件开发更加态便
+@Select("select * from tb user where id = #id")
+public User selectByld(int id);
+查询: @Select
+添加:(@Insert
+提示:
+注解完成简单功能r
+
+修改:@Update配置文件完成复杂功能r
+删除: @Delete
+使用五解来映简单语向会使代码显得更简洁，但对于档微复杂一点的语Jae 解不仅力不从心，还会让你本就复杂的 SO 向更如引不，因，如果你需要做一些很复杂的理作，最
+用XML 来映射语句。
+选择间种方式来置映射，以及认为是否应该要统一语的定义的形式，完全决于你和你的团队。换话说，永远不要于一种方式，你可以很轻的在基于注解和XML 的语句快射方式间自
+由移植和切换。
