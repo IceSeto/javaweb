@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<b><h1>公司简介</h1></b>
+    <hr color="yellow">
+<p>
+    传智教育(股票代码 003032)，隶属江苏传智播客教育科技股份有限公司，注册资本4亿元，是第一个实现A股IPO
+    的教育企业，公司致力于培养高精尖数字化人才，主要培养人工智能、python+大数据开发、智能制<br>
+    造、软件、互联网、区块链等数字化专业人才及数据分析、网络营销、新媒体等数字化应用人才。
+    公司由一批拥有10年以上开发管理经验，且来自互联网或研究机构的IT精英组成，负责研究、开发教学模式和课程内<br>
+    容。公司具有完善的课程研发体系，一直走在整个行业发展的前端，在行业内竖立起了良好的品质口碑。
+</p>
+<p>
+    民族振兴靠人才，中华民族正处于伟大复兴之路上，要赢得国际竞争，需要拥有大量的科技人才，我们将肩负起民族使命，
+    在三尺讲台诲人不倦著书立说，为科技行业培养出大量的优秀人才，促进民族伟大复兴！我<br>
+    们的使命是：<b>为中华民族伟大复兴而讲课，为千万学生少走弯路而著书。</b>
+</p>
+<p>
+    探索教育之路，长途漫漫。传智教育希望可以通过自己的努力，寻找出一条更符合人类自然成长规律的教育之路，建立起一个新的教育
+    生态环境，让中国的家长和孩子们在现有的教育体系之外，再多一些选择的机会。<br>
+    因此“<b>探索教育本源，开辟教育新生态</b>”便成为了所有传智人为之奋斗的终极愿景，也是所有传智人共同努力的目标。为此，
+    15年来，传智人不曾有一丝懈怠，相信在传智人的不懈努力下，大道不远，终在脚下。
+</p>
+    <hr color="yellow">
+<br>
+
+<font color="#00ffff"><center>江苏传智播客教育科技股份有限公司<br>版权所有&copy;Copyright 2006-2018, All Rights Reserved 苏ICP备16007882</center>
+</font>
+</body>
+</html>
+
+<!--html5 的标识-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--页面的字符集-->
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>我是标题 h1</h1>
+<h2>我是标题 h2</h2>
+<h3>我是标题 h3</h3>
+<h4>我是标题 h4</h4>
+<h5>我是标题 h5</h5>
+<h6>我是标题 h6</h6>
+
+<hr>
+
+<!--
+    html 表示颜色 ：
+        1.英文单词 red blue green
+        2.rgb（value1，value2，value3） 取值范围 0~255
+        3.#v1v2v3 值的范围 00~ff
+
+-->
+
+<center><font color="#ff69b4" face="楷体" size="5">iceseto</font></center>
+
+<hr>
+
+记者测评：人民广场到阳澄湖东约2小时，部分站点座位紧张<br>
+从上海坐地铁去苏州需要多长时间？6月16日9时43分，记者从苏州11号线花桥站出发，10时17分到达玉山广场站，共花了34分钟。如从上海人民广场地铁站出发，到达玉山广场站约需1小时50分钟。
+<hr>
+<p>
+    记者测评：人民广场到阳澄湖东约2小时，部分站点座位紧张
+</p>
+<p>
+    从上海坐地铁去苏州需要多长时间？6月16日9时43分，记者从苏州11号线花桥站出发，10时17分到达玉山广场站，共花了34分钟。如从上海人民广场地铁站出发，到达玉山广场站约需1小时50分钟。
+</p>
+<hr>
+<center>人民广场<br></center>
+<b>人民广场</b><br>
+<u>人民广场</u><br>
+<i>人民广场</i><br>
+<hr>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+    src：资源路径
+        1.绝对路径 完整路径
+        2.相对路径 相对位置关系
+        html/02-图片音频视频.html
+        html/a.jpg
+
+        ./a.jpg  &  a.jpg
+
+        html/02-图片音频视频.html
+        html/img/a.jpg
+
+        ./img/a.jpg
+
+        img/a.jpg
+        html/02-图片音频视频.html
+        ../img/a.jpg
+    尺寸单位：
+        1.像素 px
+        2.百分比；
+-->
+<img src="../img/a.jpg" width="20%" height="400">
+
+<audio src="b.mp3" controls = "controls"></audio>
+
+<video src="c.mp4" controls = "controls" width="500" height="300"></video>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a href="02-图片音频视频.html" target="_self">点我有惊喜</a>
+<a href="02-图片音频视频.html" target="_blank">点我有惊喜</a>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ol type="1">
+    <li>咖啡</li>
+    <li>茶</li>
+    <li>牛奶</li>
+</ol>
+
+
+<ul type="circle">
+    <li>咖啡</li>
+    <li>茶</li>
+    <li>牛奶</li>
+</ul>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table width="50%" border="1" cellspacing="0">
+    <tr height="50">
+        <th>序号</th>
+        <th>品牌logo</th>
+        <th>品牌名称</th>
+        <th>企业名称</th>
+    </tr>
+
+    <tr align="center">
+        <td>010</td>
+        <td><img src="../img/三只松鼠.png" width="60" height="50"></td>
+        <td>三只松鼠</td>
+        <td>三只松鼠</td>
+    </tr>
+    <tr align="center">
+        <td>009</td>
+        <td><img src="../img/优衣库.png" width="60" height="50"></td>
+        <td>优衣库</td>
+        <td>优衣库</td>
+    </tr>
+    <tr align="center">
+        <td>008</td>
+        <td><img src="../img/小米.png" width="60" height="50"> </td>
+        <td>小米</td>
+        <td>小米</td>
+    </tr>
+
+
+</table>
+<br>
+
+<hr>
+<br>
+<table width="50%" border="1" cellspacing="0">
+    <tr height="50">
+        <th colspan="2">品牌logo</th>
+        <th>品牌名称</th>
+        <th>企业名称</th>
+    </tr>
+
+    <tr align="center">
+        <td>010</td>
+        <td><img src="../img/三只松鼠.png" width="60" height="50"></td>
+        <td>三只松鼠</td>
+        <td>三只松鼠</td>
+    </tr>
+    <tr align="center">
+        <td rowspan="2">009</td>
+        <td><img src="../img/优衣库.png" width="60" height="50"></td>
+        <td>优衣库</td>
+        <td>优衣库</td>
+    </tr>
+    <tr align="center">
+        <td>008</td>
+        <td><img src="../img/小米.png" width="60" height="50"> </td>
+        <td>小米</td>
+    </tr>
+
+</table>
+
+
+<br>
+<hr>
+<br>
+<table border="1" cellspacing="0" width="60%">
+    <tr align="center">
+    <th colspan="2"></th>
+    <th>星期一</th>
+    <th>星期二</th>
+    <th>星期三</th>
+    <th>星期四</th>
+    <th>星期五</th>
+    </tr>
+
+    <tr align="center">
+        <td rowspan="4">上午</td>
+        <td>早自习</td>
+        <td>英语</td>
+        <td>语文</td>
+        <td>英语</td>
+        <td>语文</td>
+        <td>英语</td>
+    </tr>
+    <tr align="center">
+        <td>第一节</td>
+        <td>数学</td>
+        <td>数学</td>
+        <td>数学</td>
+        <td>数学</td>
+        <td>数学</td>
+    </tr>
+    <tr align="center">
+        <td>第二节</td>
+        <td>物理</td>
+        <td>物理</td>
+        <td>物理</td>
+        <td>物理</td>
+        <td>物理</td>
+    </tr>
+    <tr align="center">
+        <td>第三节</td>
+        <td>化学</td>
+        <td>化学</td>
+        <td>化学</td>
+        <td>化学</td>
+        <td>化学</td>
+    </tr>
+    <tr align="center">
+        <td colspan="7" >午休</td>
+    </tr>
+    <tr align="center">
+        <td rowspan="3">下午</td>
+        <td>第四节</td>
+        <td>生物</td>
+        <td>生物</td>
+        <td>生物</td>
+        <td>生物</td>
+        <td>生物</td>
+    </tr>
+
+    <tr align="center">
+        <td>第五节</td>
+        <td>英语</td>
+        <td>英语</td>
+        <td>英语</td>
+        <td>英语</td>
+        <td>英语</td>
+    </tr>
+    <tr align="center">
+        <td>第六节</td>
+        <td>语文</td>
+        <td>语文</td>
+        <td>语文</td>
+        <td>语文</td>
+        <td>语文</td>
+
+    </tr>
+
+</table>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>我是div</div>
+<div>我是div</div>
+
+<span>我是span</span>
+<span>我是span</span>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--
+form:
+       action:指定表单数据提交的url
+            *表单项属性要想被提交，则必须指定其name属性
+       method:指定表单提交的方式
+             1. get：默认值
+               * 请求参数会拼接在url后面
+               * url的长度有限制 4kb
+             2.post：
+               * 请求参数会在http请求协议的请求体中
+               * 请求的参数无限制
+-->
+<form action="#" method="post">
+
+    <input type="text" name="username">
+    <input type="submit">
+
+</form>
+</body>
+</html>  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+    <form action="#" method="post">
+        <input type="hidden" name="id" value="123">
+
+            <label for="username">用户名：</label>
+            <input type="text" name="username" id="username"><br>
+
+            <label for="password">密码：</label>
+            <input type="password" name="password" id="password"><br>
+
+        性别：
+            <input type="radio" name="gender" id="man" value="1"> <label for="man">男</label>
+            <input type="radio" name="gender" id="woman" value="0"> <label for="woman">女</label>
+        <br>
+        爱好：
+        <input type="checkbox" name="hobby" value="1" id="1"><label for="1">旅游</label>
+        <input type="checkbox" name="hobby" value="2" id="2"><label for="2">电影</label>
+        <input type="checkbox" name="hobby" value="3" id="3"><label for="3">游戏</label>
+        <br>
+
+        头像
+        <input type="file"><br>
+
+        城市
+        <select>
+            <option>北京</option>
+            <option value="sahnghai">上海</option>
+        </select><br>
+
+        个人描述：
+        <textarea cols="20" rows="5">
+
+        </textarea><br>
+        <input type="reset" value="重置"><br>
+
+        <input type="button" value="一个按钮">
+            <br>
+            <input type="submit" value="免费注册">
+
+
+
+    </form>
+</body>
+</html>
+
+
+
+p{
+    color: aquamarine;
+}
