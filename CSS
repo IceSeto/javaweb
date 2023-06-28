@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+
+</center><div>Hello CSS~</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <link href="../css1/demo.css" rel="stylesheet">
+</head>
+<body>
+
+<div style="color: cyan">ICESETO</div>
+
+
+<span>Hello CSS</span>
+
+<p>Hello CSS</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        #name{
+            color: cyan;
+        }
+
+        div{
+            color: red;
+        }
+
+        .cls{
+            color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<div>div1</div>
+<div id="name">div2</div>
+<div class="cls">div3</div>
+
+<span class="cls">span</span>
+
+</body>
+</html>
+
+p{
+    color: aquamarine;
+}
+
+css 导入方式
+CSS导入 HTML有三种方式
+1.内联样式:在标签内部使用style属性，属性值是css属性键值对
+
+2内样式:定义<style>标签，在标签内部定义css样式
+
+3外部样式:定义link标签，引入外部的css文件
+
+cSS 选择器
+概念:选择器是选取需设置样式的元素(标签
+div
+color: red;
+分类:
+元素选择器
+元素名称color: red;}
+id选择器
+#id届性值(color: red;
+divcolor: red;
+#name{color: red;
+<div id="name">hello css2</div>
+类选择器
+.class属性值{color: red;
+cls/color: red;
+<div class="cls">hello css3</div>
