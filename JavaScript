@@ -1,0 +1,7 @@
+什么是JavaScript?
+JavaScript 是一门跨平台、面向对象的脚本语言，来控制网页行为的，它能使网页可交互W3C标准:网页主要由三部分组成
+结构: HTML
+表现: CSS
+行为: JavaScript
+JavaScript 和Java 是完全不同的语言，不论是概念还是设计。但是基础语法类似。
+JavaScript (简称: JS) 在1995 年由 Brendan Eich 发明，并于1997 年成为一部 ECMA标准ECMAScript 6(ES6)是最新的 JavaScript 版本(发布于2015 年)。
