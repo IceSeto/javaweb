@@ -5,3 +5,275 @@ JavaScript 是一门跨平台、面向对象的脚本语言，来控制网页行
 行为: JavaScript
 JavaScript 和Java 是完全不同的语言，不论是概念还是设计。但是基础语法类似。
 JavaScript (简称: JS) 在1995 年由 Brendan Eich 发明，并于1997 年成为一部 ECMA标准ECMAScript 6(ES6)是最新的 JavaScript 版本(发布于2015 年)。
+
+JavaScript引入方式
+
+JavaScript 引入方式
+内部脚本:将JS代码定义在HTML页面中
+外部脚本:将JS代码定义在外部JS文件中，然后引入到 HTML页面中
+
+在HTML中，JavaScript代码必须位@<script>与</script>标签之间
+<script>
+alert("hello JS ~")</script>
+提示
+在HTML文档中可以在任意地方，放置任意数量的<script>一般把脚本置于<body>元素的底部，可改善显示速度，因为脚本执行会拖慢显示
+
+alert("hello JS ~")外部文件:demo.js
+引入外部js文件
+script src=“../js/demo.js"></script>
+注意
+外部脚本不能包含<script> 标签
+<script>标签不能自闭合
+JavaScript 基础语法
+
+书写语法
+输出语句
+变量
+数据类型
+运算符
+流程控制语句
+函数
+
+书写语法
+区分大小写:与Java 一样，变量名、函数名以及其他一切东西都是区分大小写的
+每行结尾的分号可有可无
+注释
+单行注释://注释内容
+多行注释:/*注释内容*/
+大括号表示代码块
+0
+if (count == 3) (alert(count);}
+
+输出语句
+使用window.lert() 写入警告框
+使用 document.write() 写入 HTML输出使用 console.log() 写入浏览器控制台
+window.alert("hello JS ");//弹出警告框document.write("hello JS ~");//写入HTMLconsole.log("hello JS ~");//写入控制台
+
+JavaScript 中用 var 关键字 (va@able 的缩写)来声明变量
+var test = 20:test ="张三
+JavaScript 是一门弱类型语言，变量可以存放不同类型的值
+变量名需要遵循如下规则:
+组成字符可以是任何字母、数字、下划线()或美元符号 (S)
+数字不能开头
+建议使用驼峰命名
+ECMAScript6新增了let 关键字来定义变量。它的用法类似于 var，但是所声明的变量，只在let 关键字所在的代码块内有效，且不允许重复声明
+ECMAScript6新增了 const关键字，用来声明一个只读的常量。一旦声明，常量的值就不能改变。
+
+数据类型
+var test = 20:
+900
+JavaScript中分为:原始类型和引用类型5种原始类型:
+number:数字(整数、小数、NaN(Not a Number))
+string: 字符、字符串，单双引皆可
+boolean: 布尔。true，false
+null:对象为空
+undefined:当声明的变量未初始化时，该变量的默认值是 undefined
+使用typeof运算符可以获取数据类型alert(typeof age);
+
+运算符
+一元运算符: ++，--
+算术运算符: +，，*，/，%
+赋值运算符:=，+=，-=...
+关系运算符:>，<，>=，<=，!，==，===..
+逻辑运算符: &&，，!
+三元运算符:条件表达式?true_value :false_value
+
+
+== 和 ===
+== 会进行类型转换，=== 不会进行类型转换
+类型转换
+>其他类型转为数字
+1.string:将字符串字面值转为数字。如果字面值不是数字，则转NaN。一般使用parselnt方法进行转换
+2.boolean:true转为1，false 转为0
+>其他类型转为 boolean
+1.number: 0和NaN转为false，其他的数字转为true
+2.string:空字符串转为false，其他字符串转为true
+3.null:转为false
+4.undefined:转为false
+
+
+流程控制语句
+if:
+switch:
+for:
+while:do...while:
+
+
+函数
+函数(方法)是被设计为执行特定任务的代码块定义: JavaScript 函数通过 function 关键词进行定义，语法为function functionName(参数1,参数2..)要执行的代码
+注意:
+形式参数不需要类型。[因为JavaScript是弱类型语言返回值也不需要定义类型，可以在函数内部直接使用return返回即可
+function add(a,b)return a + b;
+调用:函数名称(实际参数列表)
+let result = add(1,2);
+
+函数
+定义方式二
+var functionName = function (参数列表X要执行的代码
+var add = function (a,b) {return a + b;
+调用:JS中，函数调用可以传递任意个数参数
+let result = add(1 ,2,3)
+
+JavaScript 常用对象
+
+Array
+JavaScriptArray对象用于定义数组
+定义
+vr 变量名 = new Array(元素列表);//方式一
+var 变量名 =[元素列表]; //方式
+var arr = new Array(1,2,3)
+var arr = [1,2,3];
+访问
+arr[索引]= 值;
+arr[0] = 1;
+注意:JS数组类似于Java集合，长度，类型都可变
+BOM
+
+BOM
+Browser Object Model 浏览器对象模型JavaScript将浏览器的各个组成部分封装为对象
+组成
+浏览器窗口对象Window:
+Navigator:浏览器对象
+屏幕对象Screen :
+History:历史记录对象
+Location:地址栏对象
+
+Window
+Window:浏览器窗口对象
+获取:直接使用 window，其中window.可以省略
+window.alert("abc");
+属性:获取其他BOM对象
+histor
+Navigator
+Screen
+location
+对 History 对象的只读引用。请参数 History 对象对 Navigator 对象的只读引用。请参数 Navigator 对象对 Screen 对象的只读引用。请参数 Screen 对象用于窗口或框架的 Location 对象。请参阅 Location 对象
+方法
+alert()
+confirm()
+setInterval()
+setTimeout()
+显示带有一段消息和一个确认按钮的警告框
+显示带有一段消息以及确认按钮和取消按钮的对话框按照指定的周期 (以毫秒计) 来调用函数或计算表达式
+在指定的毫秒数后调用函数或计算表达式
+
+History
+History: 历史记录
+获取:使用 window.history获取，其中window.可以省略
+window.history.方法();history.方法();
+方法
+back()
+forward()
+衣
+加载 history 列表中的前一个 URL.
+加载 history 列表中的下一个 URL.
+
+_ocation
+Location:地址栏对象
+获取:使用 window.location获取，其中window.可以省略
+window.location.方法();location.方法();
+属性
+href
+设置或返回完整的 URL。
+
+
+DOM
+
+DOM
+Document Object Model 文档对象模型
+将标记语言的各个组成部分封装为对象
+Document:整个文档对象
+ElGment:元素对象
+Attribute:属性对象
+Text:文本对象
+Comment:注释对象
+
+DOM
+DOM 是w3C(万维网联盟)的标准DOM定义了访问 HTML和XML文档的标准W3C DOM 标准被分为3个不同的部分
+核心DOM:针对任何结构化文档的标准模型1.
+Document:整个文档对象
+Element:元素对象
+Attribute:属性对象
+Text:文本对象
+Comment:注释对象2.XMLDOM:针对XML文档的标准模型3.HTMLDOM:针对 HTML文档的标准模型
+Image: <img>
+Button : <input type=button'>
+
+获取 Element
+Element:元素对象
+获取:使用Document对象的方法来获取
+getElementByld:根据id属性值获取，返回一个Element对象1.
+getElementsByTagName: 根据标签名称获取，返回Element对象数组6getElementsByName: 根据name属性值获取，
+返回Element对象数组getElementsByClassName: 根据class属性值获取，返回Element对象数组
+事件监听
+事件监听
+事件:HTML事件是发生在HTML元素上的“事情”。比如:
+按钮被点击I
+鼠标移动到元素之上
+按下键盘按键
+事件监听: JavaScript可以在事件被侦测到时执行代码0
+
+事件绑定
+事件绑定有两种方式
+方式一:通过HTML标签中的事@属性进行绑定
+<input type="button" onclick='on()>
+function on()alert("我被点了");
+方式二:通过DOM元素属性绑定
+<input type="button" id="btn">
+document.getElementByld("btn").onclick = function ()alert("我被点了");
+
+表单验证
+1.当输入框失去焦点时，验证输入内容是否符合要求
+2.当点击注册按钮时，判断所有输入框的内容是否都符合要求，如果不合符则阻止表单提交
+
+表单验证
+当输入框失去焦点时，验证输入内容是否符合要求
+(1)获取表单输入
+(2)绑定onblur事件
+(3)取输内容
+var usernamelnput = document.getElementByld("username");
+usernamelnput.onblur = function () 
+var username = usernamelnput.value.trim();
+(4)是合规则var usernameReg = /Nw{6,121$/; // 正则表达式
+(5)如果不合符规则，则显示错误提示信息
+当点击注册按钮时，判断所有输入框的内容是否都符合要求，如果不合符则阻止表单提交
+var regForm = document.getElementByld("reg-form");(2)为表单对象绑定 onsubmit regForm.onsubmit = function ()
+(1)取表单对象
+(3)判断所有输入框是否都符合要求，如果符合，则返回true，如果有一项不符合，则返回false
+o
+
+正则表达式
+概念:正则表达式定义了字符串组成的规则
+定义:
+直接量:注意不要加引号
+var reg = /Aw{6,121$/;
+创建RegExp对象2.
+var reg = new RegExp("/llw(6,121$");
+方法
+test(str):判断指定字符串是否符合规则，返回true或 false
+语法
+表示开始
+s:表示结束
+[]:代表某个范围内的单个字符，比如: [0-9]单个数字字符
+.:代表任意单个字符，除了换行和行结束符
+w:代表单词字符:字母、数字、下划线()，相当于[A-Za-z0-9]
+ld:代表数字字符:相当于[0-9]
+量词:
++:至少一个var reg = /Aw+$/:
+*:零个或多个
+?:零个或一个.
+{x}:x个
+[m,}:至少m个
+m,n}:至少m个，最多n个
+
+
+
+
+
+
+
+
+
+
+
+
